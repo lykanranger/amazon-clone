@@ -1,217 +1,171 @@
 =====================================================================
-                        FULL STACK AMAZON CLONE
-                              (MERN)
+                    FULL STACK AMAZON CLONE (MERN)
 =====================================================================
 
 A FULLY FUNCTIONAL E-COMMERCE WEB APPLICATION BUILT USING THE
 MERN STACK (MONGODB, EXPRESS, REACT, NODE.JS).
 
-THIS PROJECT REPLICATES CORE AMAZON FEATURES INCLUDING:
+THIS PROJECT REPLICATES CORE AMAZON FEATURES INCLUDING
 AUTHENTICATION, PRODUCT MANAGEMENT, SHOPPING CART,
 CHECKOUT FLOW, ORDER TRACKING, AND AN ADMIN DASHBOARD.
 
 =====================================================================
-markdown
-Copy code
+
+
 -------------------------------
-           FEATURES
+            FEATURES
 -------------------------------
-css
-Copy code
+
 [ CUSTOMER FEATURES ]
-BROWSE & SEARCH PRODUCTS BY CATEGORY
-(ELECTRONICS, BOOKS, SMARTPHONES, ETC.)
 
-PRODUCT DETAILS PAGE WITH:
-IMAGES, RATINGS, PRICE, AND DELIVERY INFO
+• BROWSE & SEARCH PRODUCTS BY CATEGORY
+  (ELECTRONICS, BOOKS, SMARTPHONES, ETC.)
 
-SHOPPING CART
-ADD / REMOVE ITEMS, UPDATE QUANTITY, VIEW SUBTOTAL
+• PRODUCT DETAILS PAGE
+  IMAGES, RATINGS, PRICE, AND DELIVERY INFO
 
-CHECKOUT FLOW
-ADDRESS MANAGEMENT + SIMULATED CREDIT CARD PAYMENT
+• SHOPPING CART
+  ADD / REMOVE ITEMS, UPDATE QUANTITY, VIEW SUBTOTAL
 
-ORDER HISTORY
-VIEW PREVIOUS ORDERS IN "RETURNS & ORDERS"
+• CHECKOUT FLOW
+  ADDRESS MANAGEMENT + SIMULATED CARD PAYMENT
 
-USER PROFILE MANAGEMENT
-MANAGE PERSONAL DETAILS & DEFAULT SHIPPING ADDRESS
+• ORDER HISTORY
+  VIEW PREVIOUS ORDERS IN "RETURNS & ORDERS"
 
-Copy code
+• USER PROFILE MANAGEMENT
+  MANAGE PERSONAL DETAILS & SHIPPING ADDRESS
+
+
 [ ADMIN DASHBOARD FEATURES ]
 
-sql
-Copy code
-
-- DASHBOARD OVERVIEW
+• DASHBOARD OVERVIEW
   REAL-TIME STATS (REVENUE, ORDERS, USERS)
 
-- INVENTORY MANAGEMENT
+• INVENTORY MANAGEMENT
   FULL CRUD OPERATIONS FOR PRODUCTS
 
-- CATEGORY MANAGEMENT
+• CATEGORY MANAGEMENT
   ADD & MANAGE CUSTOM PRODUCT CATEGORIES
 
-- ORDER MANAGEMENT
-  UPDATE STATUS:
-  PROCESSING -> SHIPPED -> DELIVERED
+• ORDER MANAGEMENT
+  STATUS FLOW:
+  PROCESSING → SHIPPED → DELIVERED
 
-- USER MANAGEMENT
+• USER MANAGEMENT
   VIEW ALL REGISTERED USERS
-markdown
-Copy code
+
+
 -------------------------------
-           TECH STACK
+            TECH STACK
 -------------------------------
-diff
-Copy code
-FRONTEND:
+
+FRONTEND
 - REACT.JS
 - TAILWIND CSS
 - LUCIDE-REACT (ICONS)
 
-BACKEND:
+BACKEND
 - NODE.JS
 - EXPRESS.JS
 
-DATABASE:
+DATABASE
 - MONGODB ATLAS (CLOUD)
 
-STATE MANAGEMENT:
+STATE MANAGEMENT
 - REACT CONTEXT API
-markdown
-Copy code
+
+
 -------------------------------
-        PROJECT STRUCTURE
+        INSTALLATION & SETUP
 -------------------------------
-php
-Copy code
-amazon-clone/
-│
-├── client/                 # REACT FRONTEND
-│   ├── src/
-│   │   ├── components/     # HEADER, BANNER, PRODUCT, ETC.
-│   │   ├── Admin.js        # ADMIN DASHBOARD
-│   │   ├── Checkout.js     # CHECKOUT LOGIC
-│   │   ├── Orders.js       # ORDER HISTORY
-│   │   └── ...
-│   └── public/             # STATIC ASSETS
-│
-└── server/                 # NODE / EXPRESS BACKEND
-    ├── index.js            # SERVER ENTRY & API ROUTES
-    └── package.json        # DEPENDENCIES
-markdown
-Copy code
--------------------------------
-      INSTALLATION & SETUP
--------------------------------
-css
-Copy code
+
 [ PREREQUISITES ]
-NODE.JS INSTALLED
 
-MONGODB ATLAS ACCOUNT (FREE TIER WORKS)
+- NODE.JS INSTALLED
+- MONGODB ATLAS ACCOUNT (FREE TIER)
 
-Copy code
+
 [ BACKEND SETUP ]
 
-Copy code
-cd server
-npm install express mongoose cors dotenv nodemon
-
-pgsql
-Copy code
+$ cd server
+$ npm install express mongoose cors dotenv nodemon
 
 - OPEN server/index.js
 - REPLACE MONGO_URI WITH YOUR OWN CONNECTION STRING
 
-npx nodemon index.js
+$ npx nodemon index.js
 
-arduino
-Copy code
+EXPECTED OUTPUT
+✓ MongoDB Connected Successfully
 
-EXPECTED OUTPUT:
-✅ MongoDB Connected Successfully
 
-Copy code
 [ FRONTEND SETUP ]
 
-Copy code
-cd client
-npm install lucide-react
-npm start
+$ cd client
+$ npm install lucide-react
+$ npm start
 
-sql
-Copy code
-
-OPEN IN BROWSER:
+OPEN IN BROWSER
 http://localhost:3000
 
-Copy code
-markdown
-Copy code
-    LOGIN CREDENTIALS
-Copy code
+
+-------------------------------
+         LOGIN CREDENTIALS
+-------------------------------
+
 [ ADMIN ACCESS ]
-EMAIL : admin@gmail.com
+
+EMAIL    : admin@gmail.com
 PASSWORD : 123456
 
-NOTE:
-CLICK "ADMIN" IN HEADER AFTER LOGIN TO ACCESS DASHBOARD
+NOTE
+CLICK "ADMIN" IN HEADER AFTER LOGIN
 
-Copy code
+
 [ CUSTOMER ACCESS ]
 
-less
-Copy code
+- LOGIN WITH ANY VALID EMAIL
+  (e.g., user@test.com)
 
-- LOGIN WITH ANY VALID EMAIL (e.g., user@test.com)
 - ACCOUNT IS CREATED AUTOMATICALLY
-markdown
-Copy code
+
+
 -------------------------------
-           SCREENSHOTS
+            SCREENSHOTS
 -------------------------------
-ADD SCREENSHOTS OF:
 
-HOMEPAGE
+ADD SCREENSHOTS OF
+- HOMEPAGE
+- PRODUCT LISTING
+- PRODUCT DETAILS
+- SHOPPING CART
+- CHECKOUT PAGE
+- ADMIN DASHBOARD
 
-PRODUCT LISTING
 
-PRODUCT DETAILS
+-------------------------------
+           CONTRIBUTING
+-------------------------------
 
-SHOPPING CART
+1. FORK THE PROJECT
+2. CREATE FEATURE BRANCH
+   $ git checkout -b feature/AmazingFeature
+3. COMMIT CHANGES
+   $ git commit -m "Add AmazingFeature"
+4. PUSH TO BRANCH
+   $ git push origin feature/AmazingFeature
+5. OPEN A PULL REQUEST
 
-CHECKOUT PAGE
 
-ADMIN DASHBOARD
+-------------------------------
+              LICENSE
+-------------------------------
 
-Copy code
-markdown
-Copy code
-      CONTRIBUTING
-Copy code
-FORK THE PROJECT
+LICENSE : MIT
+SEE LICENSE FILE FOR DETAILS
 
-CREATE FEATURE BRANCH
-git checkout -b feature/AmazingFeature
 
-COMMIT CHANGES
-git commit -m "Add AmazingFeature"
-
-PUSH TO BRANCH
-git push origin feature/AmazingFeature
-
-OPEN A PULL REQUEST
-
-Copy code
-markdown
-Copy code
-         LICENSE
-Copy code
-LICENSE: MIT
-SEE LICENSE FILE FOR MORE INFORMATION
-
-Copy code
 =====================================================================
-END OF DOCUMENT
+                         END OF DOCUMENT
+=====================================================================
