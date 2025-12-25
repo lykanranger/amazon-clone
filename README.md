@@ -1,6 +1,6 @@
-=====================================================================
-                    FULL STACK AMAZON CLONE (MERN)
-=====================================================================
+==============================================================
+                FULL STACK AMAZON CLONE (MERN)
+==============================================================
 
 A FULLY FUNCTIONAL E-COMMERCE WEB APPLICATION BUILT USING THE
 MERN STACK (MONGODB, EXPRESS, REACT, NODE.JS).
